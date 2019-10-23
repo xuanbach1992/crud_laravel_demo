@@ -18,8 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get("/","LoginController@viewFormLogin");
-Route::post("/customers/","LoginController@accessLogin")->name("loginSucess");
+Route::get("/","LoginController@viewFormLogin")->name("login-demo");
+Route::post("/","LoginController@accessLogin")->name("loginSucess");
+
+
 //
 //Route::get("/product","ProductController@showFormProduct");
 //Route::post("/discount","ProductController@discountProduct")->name("product");
